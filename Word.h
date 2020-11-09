@@ -6,7 +6,7 @@ struct Word {
 	Word() = default;
 
 	Word(int Xprefix_len, int Xword_len, bool empty)
-		: Xprefix_len{ Xprefix_len }, Xword_len{ Xword_len }, empty{ empty }{}
+		: Xprefix_len{ Xprefix_len }, Xword_len{ Xword_len }, empty{ empty } {}
 
 	Word operator +(const Word& right_word) {
 		Word new_word;
