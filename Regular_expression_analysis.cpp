@@ -26,22 +26,3 @@ int main() {
 
 	return 0;
 }
-
-
-
-//ab+c.aba.*.bac.+.+* a
-//acb..bab.c.*.ab.ba.+.+*a. c
-
-
-
-//ab+c.aba.*.bac.+.+* a
-
-//acb..bab.c.*.ab.ba.+.+*a. c
-
-//acb..bab.c.*.ab.ba.+.+*a. b
-
-
-
-
-
-
