@@ -1,3 +1,7 @@
+#include "Word.cpp"
+#include <stack>
+#include <string>
+
 class Regexpr {
 	std::string alphabet;
 	std::string regexpr;
