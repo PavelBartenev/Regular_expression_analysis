@@ -45,11 +45,11 @@ public:
 				parsing_stack.push(*word);
 			}
 			else if (symbol == '1')
-				parsing_stack.push(Word(0, 0, true));
+				parsing_stack.push(Word{ 0, 0, true });
 			else if (symbol == x)
-				parsing_stack.push(Word(1, 1, false));
+				parsing_stack.push(Word{ 1, 1, false });
 			else
-				parsing_stack.push(Word(0, 0, false));
+				parsing_stack.push(Word{ 0, 0, false });
 		}
 
 		if (parsing_stack.size() != 1)
