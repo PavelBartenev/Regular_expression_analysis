@@ -38,7 +38,7 @@ public:
 					return -1;
 			}
 			else if (symbol == '*') {
-				if (parsing_stack.size() < 1)
+				if (parsing_stack.size() == 0)
 					return -1;
 				Word word = parsing_stack.top();
 				parsing_stack.pop();
