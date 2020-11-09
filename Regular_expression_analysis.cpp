@@ -2,8 +2,7 @@
 #include <string>
 #include <stack>
 #include <algorithm>
-#include "Word.h"
-#include "Regexpr.h"
+#include "Regexpr.cpp"
 
 int main() {
 	std::string str;
