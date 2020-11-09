@@ -1,3 +1,5 @@
+#include <algorithm>
+
 struct Word {
 	int Xprefix_len = 0;
 	int Xword_len = 0;
