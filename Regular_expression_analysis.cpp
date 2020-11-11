@@ -1,8 +1,6 @@
 ﻿#include <iostream>
 #include <string>
-#include <stack>
-#include <algorithm>
-#include "Regexpr.cpp"
+#include "Regexpr.h"
 
 int main() {
 	std::string str;
