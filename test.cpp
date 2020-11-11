@@ -1,7 +1,7 @@
 #include "pch.h"
 #include <gtest/gtest.h>
-#include "Word.cpp"
-#include "Regexpr.cpp"
+#include "Word.h"
+#include "Regexpr.h"
 
 TEST(TestCaseName, TestName) {
 	EXPECT_EQ(1, 1);
