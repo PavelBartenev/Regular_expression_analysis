@@ -16,8 +16,17 @@ Word Word::operator +(const Word& right_word) {
 
 Word Word::operator &(const Word& right_word) {
 	Word new_word;
-	new_word.Xword_len = ((Xword_len > 0 || empty) && (right_word.Xword_len > 0 || right_word.empty) ? Xword_len + right_word.Xword_len : 0);
-	new_word.Xprefix_len = (Xword_len > 0 || empty ? std::max(Xword_len + right_word.Xprefix_len, Xprefix_len) : 0);
+
+	if ((Xword_len > 0 || empty) && (right_word.Xword_len > 0 || right_word.empty))
+		new_word.Xword_len = Xword_len + right_word.Xword_len;
+	else
+		new_word.Xword_len = 0;
+
+	if (Xword_len > 0 || empty)
+		new_word.Xprefix_len = std::max(Xword_len + right_word.Xprefix_len, Xprefix_len);
+	else
+		new_word.Xprefix_len = 0;
+
 	new_word.empty = empty && right_word.empty;
 
 	return new_word;
