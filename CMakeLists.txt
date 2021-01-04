@@ -1,8 +1,7 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.13)
+project(Regexpr_with_test)
+set(CMAKE_CXX_STANDARD 14)
 
-project(Regexpr)
-
-add_executable(Regexpr Regexpr.cpp Word.cpp Regular_expression_analysis.cpp)
-
-add_executable(Regexpr_test test.cpp run_tests.cpp)
-target_link_libraries(Regexpr_test ${GTEST_LIBRARIES} Threads::Threads)
+include_directories(Regexpr_analysis)
+add_subdirectory(Regexpr_analysis)
+add_subdirectory(Regexpr_analysis_test)
